@@ -1,0 +1,101 @@
+/* Reset default browser styles */
+body,
+form,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set overall layout */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form select,
+form input[type="date"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul li h2 {
+  margin-bottom: 10px;
+}
+
+ul li p {
+  margin-bottom: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Pagination Links */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pagination .page-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.pagination .page-item.active {
+  background-color: #007bff;
+}
+
+.pagination .page-item.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
